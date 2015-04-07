@@ -47,29 +47,7 @@ ECHO Starting Google Chrome with --disable-web-security at bing-pong.com...
 ECHO =======================================================================
 ECHO.
 
-		REM	The following is the default command for Chrome with 1 user profile (commented out)
-		REM start /b "Chrome" "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --disable-web-security bing-pong.com
-
-		REM	This is what a command looks like for a specific user profile (commented out)
-		REM start /b "Chrome" "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --disable-web-security --profile-directory="Profile #" bing-pong.com
-			
-		REM	Find out the profile ID by typing in %localappdata% in File Explorer, going to Google->Chrome->User Data.
-		REM	If you use multiple profiles, you should specify the default profile with the flag like above, but with "Default" like so:
-		REM start /b "Chrome" "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --disable-web-security --profile-directory="Default" bing-pong.com
-
 start /b "Chrome" "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --disable-web-security --profile-directory="Default" bing-pong.com >nul 2>&1
-timeout /nobreak /t 1 >nul 2>&1
-start /b "Chrome" "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --disable-web-security --profile-directory="Profile 14" bing-pong.com >nul 2>&1
-timeout /nobreak /t 1 >nul 2>&1
-start /b "Chrome" "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --disable-web-security --profile-directory="Profile 15" bing-pong.com >nul 2>&1
-timeout /nobreak /t 1 >nul 2>&1
-start /b "Chrome" "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --disable-web-security --profile-directory="Profile 16" bing-pong.com >nul 2>&1
-timeout /nobreak /t 1 >nul 2>&1
-start /b "Chrome" "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --disable-web-security --profile-directory="Profile 17" bing-pong.com >nul 2>&1
-timeout /nobreak /t 1 >nul 2>&1
-start /b "Chrome" "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --disable-web-security --profile-directory="Profile 18" bing-pong.com >nul 2>&1
-timeout /nobreak /t 1 >nul 2>&1
-start /b "Chrome" "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --disable-web-security --profile-directory="Profile 19" bing-pong.com >nul 2>&1
 
 REM	Wait til it's done. 
 ECHO ======================================================================
