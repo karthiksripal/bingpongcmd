@@ -5,9 +5,12 @@ If you want, you can run it from a Scheduled Task. The possibilities are real.
 
 WARNING - This program forcefully closes Chrome. Make sure you save your tabs.
 
-The file works by running commands from Command Prompt on your computer.
-It does these tasks in order:
-  1. Forcefully kills all Chrome processes, and hides output from the command.
-  2. Waits 1 second.
-  3. Starts Google Chrome with the --disable-web-security flag at the address "bing-pong.com".
-  4. Exits.
+There are 2 files you may choose from: bing.bat and bing_simple.bat. Both will prompt you before starting. I have commented both extensively.
+
+bing.bat
+  This is the more advanced version. It allows you to use multiple user profiles for Chrome. Make sure you set the folder for the profile in the command.
+  
+bing_simple.bat
+  This does the original - opens a flag-modified chrome in the default profile.
+  
+In both cases, the script will prompt you to kill the modified Chrome instances and start a clean one on the default profile. Saves you a few seconds.
