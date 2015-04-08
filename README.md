@@ -23,4 +23,4 @@ How to use Multiple Profiles:
 
    You can run multiple instances of bing-pong by running multiple User Profiles at a time. So the advanced script opens up however many User Profiles you want simultaneously.
 
-   5 referrals per account, n tiers of referrals = 5n accounts. It takes a while to do searches for 125 accounts one at a time. This lets you do them (almost) concurrently, albeit with a lot more traffic.
+   5 referrals per account, n tiers of referrals = 5^n accounts. It takes a while to do searches for 125 accounts one at a time. This lets you do them (almost) concurrently, albeit with a lot more traffic.
