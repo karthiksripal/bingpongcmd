@@ -64,19 +64,19 @@ REM		Find out the profile ID by typing in %localappdata% in File Explorer, going
 REM		If you use multiple profiles, you should specify the default profile with the flag like above, but with "Default" like so:
 REM 	start /b "Chrome" "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --disable-web-security --profile-directory="Default" bing-pong.com
 
-start /b "Chrome" "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --disable-web-security --profile-directory="Default" bing-pong.com >nul 2>&1
+start /b "Chrome" "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --disable-web-security --restore-last-session --profile-directory="Default" >nul 2>&1
 timeout /nobreak /t 1 >nul 2>&1
-start /b "Chrome" "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --disable-web-security --profile-directory="Profile 14" bing-pong.com >nul 2>&1
+start /b "Chrome" "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --disable-web-security --profile-directory="Profile 1" bing-pong.com >nul 2>&1
 timeout /nobreak /t 1 >nul 2>&1
-start /b "Chrome" "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --disable-web-security --profile-directory="Profile 15" bing-pong.com >nul 2>&1
+REM start /b "Chrome" "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --disable-web-security --profile-directory="Profile 15" bing-pong.com >nul 2>&1
+REM timeout /nobreak /t 1 >nul 2>&1
+start /b "Chrome" "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --disable-web-security --profile-directory="Profile 2" bing-pong.com >nul 2>&1
 timeout /nobreak /t 1 >nul 2>&1
-start /b "Chrome" "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --disable-web-security --profile-directory="Profile 16" bing-pong.com >nul 2>&1
-timeout /nobreak /t 1 >nul 2>&1
-start /b "Chrome" "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --disable-web-security --profile-directory="Profile 17" bing-pong.com >nul 2>&1
-timeout /nobreak /t 1 >nul 2>&1
-start /b "Chrome" "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --disable-web-security --profile-directory="Profile 18" bing-pong.com >nul 2>&1
-timeout /nobreak /t 1 >nul 2>&1
-start /b "Chrome" "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --disable-web-security --profile-directory="Profile 19" bing-pong.com >nul 2>&1
+REM start /b "Chrome" "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --disable-web-security --profile-directory="Profile 17" bing-pong.com >nul 2>&1
+REM timeout /nobreak /t 1 >nul 2>&1
+REM start /b "Chrome" "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --disable-web-security --profile-directory="Profile 18" bing-pong.com >nul 2>&1
+REM timeout /nobreak /t 1 >nul 2>&1
+REM start /b "Chrome" "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --disable-web-security --profile-directory="Profile 19" bing-pong.com >nul 2>&1
 
 REM		Wait til it's done. 
 ECHO ======================================================================
@@ -115,4 +115,4 @@ REM		Success!
 ECHO Chrome processes killed.
 
 REM 	Start correct Chrome process for Default user.
-start /b "Chrome" "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Default" >nul 2>&1
+start /b "Chrome" "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --restore-last-session --profile-directory="Default" >nul 2>&1
