@@ -1,6 +1,6 @@
 REM		bingpongcmd : bing_simple.bat
 REM		Created by /u/aaronr93
-REM		Version: 1.0	Date: 4/7/15
+REM		Version: 1.0.1	Date: 4/19/15
 REM		https://github.com/aaronr93/bingpongcmd/tree/master
 REM		This is the original single-profile Bing Pong automation script.
 
@@ -53,7 +53,7 @@ ECHO Starting Google Chrome with --disable-web-security at bing-pong.com...
 ECHO =======================================================================
 ECHO.
 
-start /b "Chrome" "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --disable-web-security --profile-directory="Default" bing-pong.com >nul 2>&1
+start /b "Chrome" "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --disable-web-security --restore-last-session --profile-directory="Default" bing-pong.com >nul 2>&1
 
 REM		Wait til it's done. 
 ECHO ======================================================================

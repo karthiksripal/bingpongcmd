@@ -1,6 +1,6 @@
 REM		bingpongcmd : bing.bat
 REM		Created by /u/aaronr93
-REM		Version: 1.1	Date: 4/7/15
+REM		Version: 1.1.1	Date: 4/19/15
 REM		https://github.com/aaronr93/bingpongcmd/tree/master
 REM		This is an advanced version that allows multiple
 REM		simultaneous Chrome user profiles.
